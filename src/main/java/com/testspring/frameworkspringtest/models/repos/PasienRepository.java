@@ -6,4 +6,5 @@ import com.testspring.frameworkspringtest.models.entities.Pasien;;
 public interface PasienRepository extends JpaRepository<Pasien, Integer> {
     boolean existsByEmailPasien(String emailPasien);
     boolean existsByEmailPasienAndPasswordPasien(String emailPasien, Integer integer);
+    Pasien findByEmailPasien(String emailPasien);
 }

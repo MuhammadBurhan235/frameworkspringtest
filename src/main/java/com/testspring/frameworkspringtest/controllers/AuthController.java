@@ -21,6 +21,10 @@ public class AuthController {
             return "User already exists";
         }
         
+        pasien.setNamaPasien(pasien.getNamaPasien());
+        pasien.setEmailPasien(pasien.getEmailPasien());
+        pasien.setPasswordPasien(pasien.getPasswordPasien());
+
         // Save the new user
         pasienRepository.save(pasien);
         
